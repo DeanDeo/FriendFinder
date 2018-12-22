@@ -27,14 +27,6 @@ connection.connect(function(err) {
   }
 });
 
-{
-  ("name");
-  "Ahmed", "photo";
-  "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-    "scores";
-  [5, 1, 4, 4, 5, 1, 2, 5, 4, 1];
-}
-
 function loadProfiles() {
   // Selects all of the data from the MySQL profiles table
   connection.query("SELECT * FROM profiles", function(err, res) {
