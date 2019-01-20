@@ -10,6 +10,5 @@ if (process.env.JAWSDB_URL) {
     user: "	yr89dnv44759n0in",
     password: "vztq2vk3nbl1db0d",
     database: "e2g9ym5tn15bmmxa",
-    port: "3306"
   });
 }
