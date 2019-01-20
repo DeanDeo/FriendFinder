@@ -1,24 +1,7 @@
-// ===============================================================================
-// LOAD DATA
-// We are linking our routes to a series of "data" sources.
-// These data sources hold arrays of information on table-data, waitinglist, etc.
-// ===============================================================================
 
-// var friends = require("../data/friends");
-var mysql = require("mysql");
+var connection = require("./connection.js");
+var totalDifference = 0
 
-var connection;
-if (process.env.JAWSDB_URL) {
-  connection = mysql.createConnection(process.env.JAWSDB_URL);
-} else {
-  var connection = mysql.createConnection({
-    host: "localhost",
-    port: 3307,
-    user: "root",
-    password: "root",
-    database: "friends"
-  });
-}
 
 connection.connect(function(err) {
   if (err) {
